@@ -95,15 +95,3 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 For any inquiries or support, please reach out to [your-email@example.com].
 ```
-
-### Explanation:
-- **Title and Description**: Introduces the SDK and its purpose.
-- **Features**: Lists key functionalities.
-- **Installation**: Provides instructions for installing the SDK.
-- **Usage**: Shows examples of how to initialize the client and use its methods.
-- **API Endpoints**: Details the backend endpoints that the SDK interacts with.
-- **Development**: Instructions for contributing and running tests.
-- **License**: Specifies the licensing information.
-- **Contact**: Provides a way for users to reach out for support.
-
-Feel free to modify any sections to better fit your project's specifics!
