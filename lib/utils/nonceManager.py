@@ -5,6 +5,10 @@ class NonceManager:
         # A dictionary to hold nonces for each user and network
         self.nonces = defaultdict(lambda: defaultdict(int))
 
+    def add_nonce(self, user_address, network_id, nonce=1):
+        """Adds a specific nonce value for a user on a network."""
+        self.nonces[network_id][user_address] += nonce
+
     def get_nonce(self, user_address, network_id):
         """Returns the current nonce for the given user and network, then increments it."""
         current_nonce = self.nonces[network_id][user_address]
@@ -18,9 +22,3 @@ class NonceManager:
     def set_nonce(self, user_address, network_id, nonce):
         """Sets the nonce for the given user and network to a specific value."""
         self.nonces[network_id][user_address] = nonce
-
-# Example usage:
-# nonce_manager = NonceManager()
-# nonce = nonce_manager.get_nonce("0xUserAddress", "network_id_1")
-# print(nonce)
-# nonce_manager.reset_nonce("0xUserAddress", "network_id_1")

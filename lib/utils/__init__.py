@@ -1,10 +1,16 @@
-from .nonceManager import get_nonce
+from .nonceManager import NonceManager
 from .network import get_network_config
-from .encryption import encrypt_data, decrypt_data
+from .encryption import Encryption
+
+# Initialize NonceManager instance
+nonce_manager = NonceManager()
+
+encryption = Encryption()
+
 
 __all__ = [
-    "get_nonce",
+    "inferenceClient",
+    "nonce_manager",
     "get_network_config",
-    "encrypt_data",
-    "decrypt_data"
+    "encryption"
 ]
